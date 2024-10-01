@@ -66,7 +66,7 @@ h5 {
 /* ----------- Barra de navegación ----------- */
 .navbar {
     background-color: var(--color-cuaternario);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -88,20 +88,27 @@ h5 {
 .navbar-icon h1 {
     font-size: 1.5rem;
     color: var(--color-terciario);
+    color: #1f1d1d;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
+
 
 .navbar-title h2 {
     font-size: 2.6em;
     /* Ajusta el tamaño según sea necesario */
     font-weight: bold;
     /* Para que sea más destacado */
-    color: var(--color-terciario);
+    background: var(--color-cuaternario);
+    text-shadow: #474747 3px 5px 2px;
     /* Color del texto */
     text-align: center;
     /* Alineación */
     margin: 20px 0;
     /* Espaciado */
+    color: #1f1d1d;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
+
 
 .navbar-links ul li {
     padding: 0;
@@ -122,8 +129,10 @@ h5 {
     text-align: center;
     /* Centra los enlaces */
     display: flex;
-    flex-direction: column; /* En pantallas pequeñas, apila los enlaces verticalmente */
-    align-items: center; /* Centra los enlaces */
+    flex-direction: column;
+    /* En pantallas pequeñas, apila los enlaces verticalmente */
+    align-items: center;
+    /* Centra los enlaces */
     width: 100%;
     /* Ocupa el 100% del contenedor */
 }
@@ -153,13 +162,16 @@ h5 {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     text-align: center;
 }
 
 .titulo {
     font-size: 2.5em;
-    color: var(--color-terciario);
+    color: #202c2d;
+    background: #FFFFFF;
+    text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
     margin-bottom: 30px;
 }
 
@@ -175,13 +187,15 @@ h5 {
     margin: 10px;
     background-color: #007BFF;
     color: white;
-    text-decoration: none;
+    text-decoration:none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .boton:hover {
-    background-color: #0056b3;
+    background-color: #7b1c9e;
+    text-decoration: none;
 }
 
 
@@ -192,7 +206,7 @@ footer {
     text-align: center;
     color: var(--color-terciario);
     width: 100%;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .footer-container {
@@ -213,13 +227,13 @@ footer {
     font-weight: bold;
     display: flex;
     flex-direction: column;
-} 
+}
 
 .footer-links {
     list-style: none;
     display: flex;
     gap: 15px;
-    
+
 }
 
 .footer-links li {
@@ -227,7 +241,8 @@ footer {
 }
 
 .footer-links a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
     color: var(--color-secundario);
     font-weight: bold;
     transition: color 0.3s ease;
@@ -274,39 +289,56 @@ footer {
         /* Espaciado vertical entre enlaces */
         align-items: center;
     }
+
     .footer {
-        display: flex; /* Utiliza flexbox para el footer */
-        flex-direction: column; /* Coloca los elementos en columna */
-        align-items: center; /* Centra horizontalmente */
-        justify-content: center; /* Centra verticalmente si hay suficiente altura */
-        text-align: center; /* Asegura que el texto esté centrado */
-        padding: 20px; /* Agrega padding para mejorar la apariencia */
+        display: flex;
+        /* Utiliza flexbox para el footer */
+        flex-direction: column;
+        /* Coloca los elementos en columna */
+        align-items: center;
+        /* Centra horizontalmente */
+        justify-content: center;
+        /* Centra verticalmente si hay suficiente altura */
+        text-align: center;
+        /* Asegura que el texto esté centrado */
+        padding: 20px;
+        /* Agrega padding para mejorar la apariencia */
     }
 
     .footer-links {
-        display: flex; /* Usar flexbox para centrar los elementos */
-        flex-direction: column; /* Coloca los enlaces en columna */
-        align-items: center; /* Asegura que los enlaces estén centrados */
-        padding: 40px; /* Elimina el padding por defecto */
-        margin-left:60px;
+        display: flex;
+        /* Usar flexbox para centrar los elementos */
+        flex-direction: column;
+        /* Coloca los enlaces en columna */
+        align-items: center;
+        /* Asegura que los enlaces estén centrados */
+        padding: 40px;
+        /* Elimina el padding por defecto */
+        margin-left: 60px;
     }
 
     .footer-links ul {
-        padding: 0; /* Elimina el padding por defecto */
-        list-style-type: none; /* Elimina el estilo de lista */
+        padding: 0;
+        /* Elimina el padding por defecto */
+        list-style-type: none;
+        /* Elimina el estilo de lista */
     }
 
     .footer-links ul li {
-        margin: 5px 0; /* Espaciado vertical entre enlaces */
+        margin: 5px 0;
+        /* Espaciado vertical entre enlaces */
     }
 
     .footer-links a {
-        text-decoration: none; /* Elimina el subrayado de los enlaces */
-        color: #000; /* Cambia el color del texto según tu diseño */
+        text-decoration: none;
+        /* Elimina el subrayado de los enlaces */
+        color: #000;
+        /* Cambia el color del texto según tu diseño */
     }
 
     .footer-links a:hover {
-        text-decoration: underline; /* Subraya en hover para mejor visibilidad */
+        text-decoration: underline;
+        /* Subraya en hover para mejor visibilidad */
         color: var(--color-hover);
     }
 }

@@ -70,7 +70,7 @@ h5 {
 /* ----------- Barra de navegación ----------- */
 .navbar {
   background-color: var(--color-cuaternario);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -87,12 +87,16 @@ h5 {
 .navbar-icon img {
   width: 50px;
   margin-right: 10px;
+  
 }
 
 .navbar-icon h1 {
   font-size: 1.5rem;
-  color: #0e0f10;
+  color: #1f1d1d;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
+
+
 
 .navbar-title h2 {
   font-size: 2.5em;
@@ -105,6 +109,8 @@ h5 {
   /* Alineación */
   margin: 20px 0;
   /* Espaciado */
+  color: #1f1d1d;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
 
 .navbar-links ul li {
@@ -146,8 +152,15 @@ h5 {
   padding:15px;
   background-color: white;
   color: var(--color-terciario);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
   border-radius: 8px;
+  height: 175px;
+  overflow: hidden;
+  transition: height .5s;
+}
+
+.container:hover{
+  height: auto;
 }
 
 .container h2 h3 h4{
@@ -189,7 +202,7 @@ h5 {
 
 .clase:hover {
   transform: scale(1.02); /* Aumenta el tamaño ligeramente al pasar el ratón */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra al pasar el ratón */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Agrega una sombra al pasar el ratón */
 }
 
 .clase p{
