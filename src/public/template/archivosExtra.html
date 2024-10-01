@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página con contenido de videos del Nodo Tecnológico">
+    <meta name="keywords" content="Clases Online, Videos, Resumen">
+    <meta name="author" content="Vilma Ponce">
+    <!-- Zona de fuentes e íconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="/src/static/css/archivosExtra.css">
+</head>
+
+<body>
+
+    <!-- Banner con la cara del profesor -->
+    <header class="banner">
+        <a href="#pdfGuardado"><h1>Archivos PDF</h1></a>
+    </header>
+
+    <!-- Formulario para subir PDF -->
+    <section class="upload-section">
+        <h2>Subir un archivo PDF</h2>
+        <form id="pdfForm" enctype="multipart/form-data">
+            <input type="file" id="pdfUpload" accept="application/pdf">
+            <button type="button" onclick="uploadPDF()">Subir</button>
+        </form>
+    </section>
+
+    <!-- Contenedor para mostrar todos los PDFs subidos -->
+    <section id="pdfContainer">
+        <h2>Archivos Subidos</h2>
+    </section>
+
+    <!-- Botón para abrir un archivo guardado -->
+    <h2>Abrir PDF Guardado</h2>
+    <button class="pdf-button" onclick="openPDF('/src/static/pdf')">Abrir Archivo Guardado</button>
+
+    <div id="pdfGuardado" >
+        <h1>Archivos PDF Guardados</h1>
+        <button class="pdf-button" onclick="openPDF('/src/static/pdf/MaterialExtra.pdf')">Apunte 1</button>
+        <button class="pdf-button" onclick="openPDF('/src/static/pdf/archivo_guardado.pdf')">Apunte 2</button>
+        <button class="pdf-button" onclick="openPDF('/src/static/pdf/MaterialExtra.pdf')">Apunte 3</button>
+        <button class="pdf-button" onclick="openPDF('/src/static/pdf/Vilma Ponce-ApunteJs.pdf')">Apunte 4</button>
+        <button class="pdf-button" onclick="openPDF('/src/static/pdf/Guia de Ejercicios.pdf')">Abrir Ejercicios</button>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 Proyecto/Nodo Tecnológico/Vilma Ponce.</p>
+            <ul class="footer-links">
+                <li><a href="/index.html">Mi Inicio</a></li>
+                <li><a href="/src/public/template/documentacion.html">Mas Apuntes</a></li>
+
+
+            </ul>
+        </div>
+    </footer>
+    <script src="/src/static/js/archivosExtra.js"></script>
+</body>
+
+</html>

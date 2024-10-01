@@ -1,0 +1,360 @@
+/* Reglas universales */
+
+:root {
+  --color-primario: rgb(43, 139, 223);
+  --color-secundario: #e91e63;
+  --color-terciario: #303030;
+  --color-cuaternario: #f3eaea;
+  --color-slide: rgba(255, 255, 255, 0.5);
+  --color-nav: #0B3D91;
+  --color-hover: #47ef09;
+  --bg-oscuro: #171717;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 1em;
+  height: .5em;
+}
+
+/* Carril del scroll */
+::-webkit-scrollbar-track {
+  background-color: var(--color-terciario);
+}
+
+/* Almohadilla del scroll */
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primario);
+  border-radius: 5em;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-slide);
+  background-color: #68777d;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+  word-wrap: break-word; /* Forzar a que los enlaces largos se rompan en varias líneas */
+  white-space: normal; /* Evitar que los enlaces largos se mantengan en una sola línea */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tipografía */
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto Slab", serif;
+}
+
+/* ----------- Barra de navegación ----------- */
+.navbar {
+  background-color: var(--color-cuaternario);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 25px 20px;
+}
+
+.navbar-icon {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.navbar-icon h1 {
+  font-size: 1.5rem;
+  color: #0e0f10;
+}
+
+.navbar-title h2 {
+  font-size: 2.5em;
+  /* Ajusta el tamaño según sea necesario */
+  font-weight: bold;
+  /* Para que sea más destacado */
+  color: var(--color-nav);
+  /* Color del texto */
+  text-align: center;
+  /* Alineación */
+  margin: 20px 0;
+  /* Espaciado */
+}
+
+.navbar-links ul li {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* En pantallas pequeñas, apila los enlaces verticalmente */
+  align-items: center; /* Centra los enlaces */
+  width: 100%; /* Asegura que ocupen todo el ancho del contenedor */
+}
+
+.navbar-links ul li {
+  list-style: none;
+  margin: 50px; /* Ajusta los márgenes verticales */
+  text-align: center; /* Centra los enlaces */
+  width: 100%; /* Ocupa el 100% del contenedor */
+}
+
+.navbar-links ul li a {
+  display: block;
+  text-decoration: none;
+  color: var(--bg-oscuro);
+  width: 100%; /* Asegura que los enlaces no se desborden */
+}
+
+.navbar-links i {
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  color: red;         /* Color del icono */
+}
+
+.navbar-links ul li a:hover {
+  color: var(--color-hover);
+}
+
+/* Contenedores */
+.container {
+  max-width:900px;
+  margin: 0 auto;
+  padding:15px;
+  background-color: white;
+  color: var(--color-terciario);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.container h2 h3 h4{
+  font-size: 1.5em;
+  padding: 20 px;
+}
+.container p{
+  padding: 20px;
+}
+#div-global {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+/* Listas de enlaces */
+.link-list {
+  list-style-type: none;
+  padding:2px;
+}
+
+.link-list li {
+  margin:10px 0;
+}
+
+
+
+/* ----------- Sección de clases ----------- */
+
+.clase {
+  border: 1px solid #ddd;
+  margin: 50px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color:var(--color-cuaternario);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Añade transición */
+}
+
+.clase:hover {
+  transform: scale(1.02); /* Aumenta el tamaño ligeramente al pasar el ratón */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra al pasar el ratón */
+}
+
+.clase p{
+  color: var(--color-terciario);
+}
+.clase h2 {
+  color: var(--color-secundario);
+}
+
+.video {
+  width: 100%;
+  height: 315px;
+}
+
+/* ----------- Footer ----------- */
+footer {
+  background-color: var(--color-cuaternario);
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 50px;
+  display: flex;
+  color: var(--bg-oscuro);
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: bold;
+
+}
+
+.footer-container p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-links li {
+  display: inline;
+} 
+
+.footer-links a {
+ 
+  color: var(--color-secundario);
+  font-weight: bold;
+  transition: color 0.3s ease;
+
+}
+
+
+.footer-links a:hover {
+  color: var(--color-hover);
+}
+
+
+/*---------MEDIA QUERYS-----------*/
+
+/* Para pantallas muy pequeñas (320px - 350px) */
+@media only screen and (max-width: 350px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar-links ul{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    width: 100%; /* Asegura que los enlaces ocupen todo el ancho disponible */
+    text-align: center;
+  }
+
+  .navbar-links li{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0; /* Elimina el margen que empuja los enlaces hacia la derecha */
+    margin-bottom: 10px;
+    width: 100%; /* Asegura que los enlaces no se desplacen fuera de la pantalla */
+  }
+
+  .container {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
+  }
+
+  h1, h2, h3, h4 {
+    font-size:1.1em; /* Ajusta el tamaño del texto para pantallas pequeñas */
+  }
+
+  p {
+    font-size: 0.5em; /* Ajusta el tamaño del párrafo para mejor legibilidad */
+  }
+
+  /* Asegúrate de que no haya desbordamiento horizontal */
+  body {
+    overflow-x: hidden;
+  }
+  .footer-links a {
+ 
+    color: var(--color-secundario);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  
+  }
+}
+
+
+
+
+/* Para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+/* Para pantallas medianas (tablets) */
+@media only screen and (max-width: 992px) {
+  .navbar-title h2 {
+    font-size: 2em;
+  }
+
+  .navbar-links ul {
+    flex-direction: row;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 1.5em;
+  }
+}
