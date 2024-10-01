@@ -37,7 +37,7 @@ videos.forEach(video => {
     // Agregar el título, video, resumen y detalle al div de la clase
     divClase.appendChild(titulo);
     divClase.appendChild(iframe);
-    divClase.appendChild(resumen); // Asegúrate de que esta línea esté antes de detalle
+    divClase.appendChild(resumen); // Esta línea esté antes de detalle
     divClase.appendChild(detalle);
 
     // Agregar el div de la clase al contenedor
