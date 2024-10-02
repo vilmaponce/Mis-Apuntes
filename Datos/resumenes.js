@@ -342,8 +342,14 @@ const resumenes = [
       numero: "Clase 18",
       resumen: "CLASE NRO. 18: PROYECTO FINAL",
       contenido: ``
-    }
+    },
+    {
+      numero: "Clase 19",
+      resumen: "CLASE NRO. 19: En construccion",
+      contenido: ``
+    },
   ];
+  
   
   export default resumenes;
   

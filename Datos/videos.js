@@ -95,8 +95,12 @@ const videos = [
     {
         numero: "Clase 18",
         video: "https://www.youtube.com/embed/u_0YXaEFub0"
+    },
+    
+    {
+        numero: "Clase 19",
+        video: "https://www.youtube.com/embed/b9Wh5j-YcXM"
     }
-
   ];
   
   export default videos;
